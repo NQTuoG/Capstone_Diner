@@ -4,3 +4,24 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
+
+body .kieu_chu {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #ff6600;
+  display: block;
+  font-family: "Pacifico", sans-serif !important;
+}
+.aboutus .content h3 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.aboutus .content p {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(47, 45, 45, 0.777);
+}
