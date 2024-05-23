@@ -4,3 +4,166 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
+
+header {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100%;
+}
+
+header .header_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px 15px 60px;
+}
+
+header .header_right {
+  display: flex;
+  align-items: center;
+}
+
+header .header_right a {
+  color: white;
+}
+
+
+header .header_right input {
+  padding: 8px 30px;
+  border-radius: 5px;
+  background-color: white !important;
+  border: none;
+}
+
+header .header_right input:hover,
+header .header_right input:focus {
+  border: none;
+  outline: none;
+}
+
+header .header_right .position-relative i {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+header #moon i {
+  font-size: 20px;
+  margin: 0 30px 0 20px;
+}
+
+header #burger i {
+  font-size: 30px;
+}
+
+
+/* coplapse Menu */
+.header__menu--content {
+  margin-left: 207px;
+}
+
+.header__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-color: black;
+  transition: all 0.5s;
+  background: rgb(6 3 0 / 77%);
+}
+
+.header__menu.hide {
+  transition-delay: 0.9s;
+  visibility: hidden;
+}
+
+.header__menu.show {
+  height: 652px;
+  visibility: visible;
+}
+
+.header__navigation {
+  padding-top: 160px;
+  padding-bottom: 38px;
+  list-style-type: none;
+}
+
+.header__item {
+  margin-bottom: 22px;
+}
+
+.header__link {
+  font-size: 26px;
+  text-decoration: none;
+  color: #9d9d9d;
+}
+
+.header__menu.show .header__link {
+  animation-name: showMenu;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.header__menu.hide .header__link {
+  animation-name: hideMenu;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.header__bottom {
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.header__menu.show .header__bottom {
+  transition-delay: 0.5s;
+  opacity: 1;
+}
+
+.header__bottom--content {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__bottom::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #313131;
+  transition: all 0.5s;
+}
+
+.header__menu.show .header__bottom::before {
+  transition-delay: 0.5s;
+  width: 100%;
+}
+
+.header__bottom-left a {
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 20px;
+}
+
+.header__bottom-right i {
+  font-size: 14px;
+  color: #9d9d9d;
+  margin: 0 5px;
+}
+
+.header__page,
+.header__social i,
+.header__link {
+  transition: all 0.25s;
+}
+
+.header__page:hover,
+.header__social i:hover,
+.header__link:hover {
+  color: #ef9982;
+}
