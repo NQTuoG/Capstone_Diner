@@ -1,3 +1,4 @@
+//Menu xổ xuống
 const getElement = (selector) => {
     return document.querySelector(selector);
 }
@@ -16,3 +17,15 @@ getElement(".header_navbar").addEventListener("click", () => {
         headerNav.classList = "header_navbar hide";
     }
 })
+
+//DarkTheme
+let darktheme = document.querySelector("body");
+let darksearch = document.querySelector(".header_right input");
+console.log(darksearch);
+let darkmail = document.querySelector(".footer_content input");
+console.log(darkmail);
+document.getElementById("moon").onclick = function () {
+    darktheme.classList.toggle("dark");
+    darksearch.classList.toggle("dark-search");
+    darkmail.classList.toggle("dark-mail");
+}

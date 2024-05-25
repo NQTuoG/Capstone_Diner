@@ -5,6 +5,11 @@
   font-family: "Quicksand", sans-serif;
 }
 
+body.dark {
+  background-color: #232220;
+  color: white;
+}
+
 .btn-orange {
   padding: 12px 45px;
   font-size: 16px;
@@ -74,20 +79,33 @@ header .header_right {
 header .header_right input {
   padding: 8px 30px;
   border-radius: 5px;
-  background-color: white !important;
+  background-color: white;
   border: none;
 }
 
+.dark-search,
+.dark-mail {
+  background-color: #232220 !important;
+  color: white !important;
+}
+
+.dark-search::placeholder,
+.dark-mail::placeholder {
+  color: white;
+}
+
+
 header .header_right input:hover,
 header .header_right input:focus {
+  box-shadow: none;
   border: none;
-  outline: none;
 }
 
 header .header_right .position-relative i {
   position: absolute;
   top: 12px;
   right: 20px;
+  cursor: pointer;
 }
 
 header #moon i {
@@ -95,6 +113,7 @@ header #moon i {
   font-size: 23px;
   margin: 0 30px 0 20px;
   transform: rotate(-20deg);
+  cursor: pointer;
 }
 
 .header_navbar {
@@ -118,8 +137,6 @@ header #moon i {
   line-height: 1;
 }
 
-
-/* Tạo menu sổ xuống */
 .header_menu {
   position: absolute;
   top: 0;
@@ -272,6 +289,17 @@ footer .form-row input {
   border-radius: 8px;
 }
 
+footer .form-row input:hover,
+footer .form-row input:focus {
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+
+.dark-mail:hover,
+.dark-mail:focus {
+  border: 1px solid #ff6600 !important;
+}
+
 footer .footer_bottom {
   border-top: 1px solid rgb(255 255 255 / 5%);
 }
@@ -281,6 +309,36 @@ footer .footer_bottom p {
   margin: 0;
 }
 
+.toTop {
+  visibility: hidden;
+  position: fixed;
+  bottom: 45px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background-color: #ff6600;
+  padding: 0;
+  line-height: 36px;
+  border-radius: 35px;
+  transition: 0.3s ease-out;
+}
+
+/* back-to-top button visible */
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* reduce button opacity if user keeps scrolling */
+.cd-top--fade-out {
+  opacity: .5;
+}
 
 /* Reponsive Header & Footer */
 
