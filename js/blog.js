@@ -21,11 +21,42 @@ getElement(".header_navbar").addEventListener("click", () => {
 //DarkTheme
 let darktheme = document.querySelector("body");
 let darksearch = document.querySelector(".header_right input");
-console.log(darksearch);
 let darkmail = document.querySelector(".footer_content input");
-console.log(darkmail);
+let darksocial = document.querySelector("footer .footer_social");
+
+
 document.getElementById("moon").onclick = function () {
     darktheme.classList.toggle("dark");
     darksearch.classList.toggle("dark-search");
     darkmail.classList.toggle("dark-mail");
+    darksocial.classList.toggle("dark-social");
+}
+
+
+// page-break
+let page1 = document.getElementById("page1");
+let page2 = document.getElementById("page2");
+document.getElementById("two").onclick = function () {
+    console.log(page1);
+    page1.classList.remove("hiennguyenhinh");
+    page1.classList.add("tocbien");
+    page2.classList.remove("tocbien");
+    page2.classList.add("hiennguyenhinh");
+}
+
+document.getElementById("next").onclick = function () {
+    console.log(page1);
+    page1.classList.remove("hiennguyenhinh");
+    page1.classList.add("tocbien");
+    page2.classList.remove("tocbien");
+    page2.classList.add("hiennguyenhinh");
+}
+
+document.getElementById("one").onclick = function () {
+    console.log(page1);
+
+    page2.classList.remove("hiennguyenhinh");
+    page2.classList.add("tocbien");
+    page1.classList.remove("tocbien");
+    page1.classList.add("hiennguyenhinh");
 }

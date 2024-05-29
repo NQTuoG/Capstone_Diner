@@ -5,10 +5,18 @@
     font-family: "Quicksand", sans-serif;
 }
 
+
+
+body {
+    background-color: white;
+    transition: all 1s ease-out;
+}
+
 body.dark {
     background-color: #232220;
     color: white;
 }
+
 
 .btn-orange {
     padding: 12px 45px;
@@ -280,6 +288,7 @@ header #moon i {
     font-size: 18px;
     line-height: 1.5;
     font-weight: 600;
+    padding-left: 0;
 }
 
 .banner ul a {
