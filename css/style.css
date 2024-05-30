@@ -264,10 +264,7 @@ span {
 }
 /* ======munber======== */
 .item_mun {
-  border: 1px solid red;
   text-align: center;
-  border-radius: 10px;
-  /* width: 250px; */
 }
 .item_mun span {
   font-size: 24px;
@@ -275,6 +272,8 @@ span {
 }
 .counter {
   padding: 40px 0px;
+  border: 1px solid red;
+  border-radius: 10px;
 }
 .item_mun .icon_bg {
   font-size: 26px;
@@ -358,6 +357,19 @@ span {
   border-radius: 50%;
   padding: 20px;
 } */
+
+/* <!-- Testimonials  --> */
+.testimonials_bg_img img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.testimonials_bg_img {
+  width: 80px;
+  height: 80px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 
 /* ============== */
 @media (min-width: 1280px) {
