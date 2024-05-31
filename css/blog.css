@@ -443,7 +443,6 @@ header #moon i {
 }
 
 
-
 .blog .blog_recent aside {
     padding: 40px 30px;
     margin-bottom: 40px;
@@ -451,6 +450,10 @@ header #moon i {
     border-radius: 6px;
 }
 
+.blog .blog_recent .sticky_block {
+    position: sticky;
+    top: 30px;
+}
 
 .blog .blog_recent a {
     text-decoration: none;
