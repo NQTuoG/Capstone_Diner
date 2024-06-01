@@ -506,7 +506,7 @@ header .header_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 70px 15px 70px;
+  padding: 40px 0 40px 0;
 }
 
 header .header_right {
