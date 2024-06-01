@@ -89,7 +89,8 @@ header {
 }
 
 header h2 {
-    font-weight: bolder;
+    font-weight: 700;
+    font-size: 36px;
 }
 
 header .header_left a {
@@ -100,7 +101,7 @@ header .header_content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 70px 15px 70px;
+    padding: 40px 0 40px 0;
 }
 
 header .header_right {
@@ -506,11 +507,28 @@ footer .footer_bottom p {
 }
 
 /* Reponsive Header & Footer */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+}
 
-@media screen and (max-width: 600px) {
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
 
     header .navbar form {
         display: none;
+    }
+
+    header .header_content {
+        padding: 40px 15px 40px 15px;
     }
 
     footer .footer_social {
