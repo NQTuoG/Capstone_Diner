@@ -428,6 +428,7 @@ header #moon i {
     font-weight: 600;
     color: #6A6F7A;
     transition: all 0.5s;
+    border: 1px solid #EEEEEE;
 }
 
 .blog .blog_content .custom-page .pagination li a:hover {
@@ -435,10 +436,14 @@ header #moon i {
     border: 1px solid #ff6600;
 }
 
-.blog .blog_content .custom-page .pagination li a:focus {
-    background: #ff6600;
-    color: white;
+.blog .custom-page .pagination li a:focus,
+.blog .custom-page .active>.page-link,
+.blog .custom-page .page-link.active {
+    background: #ff6600 !important;
+    color: white !important;
+    box-shadow: none !important;
 }
+
 
 
 .blog .blog_recent aside {
