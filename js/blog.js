@@ -36,27 +36,73 @@ document.getElementById("moon").onclick = function () {
 // page-break
 let page1 = document.getElementById("page1");
 let page2 = document.getElementById("page2");
+let phanTrang = document.getElementById("one");
+let phanTrang2 = document.getElementById("two");
+let phanTrangNext = document.getElementById("next");
+let phanTrangPrev = document.getElementById("prev");
+
 document.getElementById("two").onclick = function () {
-    console.log(page1);
     page1.classList.remove("hiennguyenhinh");
     page1.classList.add("tocbien");
     page2.classList.remove("tocbien");
     page2.classList.add("hiennguyenhinh");
+    phanTrang.classList.remove("active");
+    phanTrang.classList.remove("disabled");
+    phanTrangNext.classList.add("disabled");
+    phanTrang2.classList.add("active");
+    phanTrang2.classList.add("disabled");
+    phanTrangNext.classList.add("tocbien");
+    phanTrangNext.classList.remove("hiennguyenhinh");
+    phanTrangPrev.classList.add("hiennguyenhinh");
+    phanTrangPrev.classList.remove("tocbien");
+
 }
 
 document.getElementById("next").onclick = function () {
-    console.log(page1);
     page1.classList.remove("hiennguyenhinh");
     page1.classList.add("tocbien");
     page2.classList.remove("tocbien");
     page2.classList.add("hiennguyenhinh");
+    phanTrang.classList.remove("active");
+    phanTrang.classList.remove("disabled");
+    phanTrang2.classList.add("active");
+    phanTrang2.classList.add("disabled");
+    phanTrangNext.classList.add("tocbien");
+    phanTrangNext.classList.remove("hiennguyenhinh");
+    phanTrangPrev.classList.add("hiennguyenhinh");
+    phanTrangPrev.classList.remove("tocbien");
 }
 
-document.getElementById("one").onclick = function () {
-    console.log(page1);
-
+document.getElementById("prev").onclick = function () {
     page2.classList.remove("hiennguyenhinh");
     page2.classList.add("tocbien");
     page1.classList.remove("tocbien");
     page1.classList.add("hiennguyenhinh");
+    phanTrang.classList.add("active");
+    phanTrang.classList.add("disabled");
+    phanTrang2.classList.remove("active");
+    phanTrang2.classList.remove("disabled");
+    phanTrangNext.classList.remove("active");
+    phanTrangNext.classList.remove("disabled");
+    phanTrangPrev.classList.add("tocbien");
+    phanTrangPrev.classList.remove("hiennguyenhinh");
+    phanTrangNext.classList.add("hiennguyenhinh");
+    phanTrangNext.classList.remove("tocbien");
+}
+
+document.getElementById("one").onclick = function () {
+    page2.classList.remove("hiennguyenhinh");
+    page2.classList.add("tocbien");
+    page1.classList.remove("tocbien");
+    page1.classList.add("hiennguyenhinh");
+    phanTrang.classList.add("active");
+    phanTrang.classList.add("disabled");
+    phanTrang2.classList.remove("active");
+    phanTrang2.classList.remove("disabled");
+    phanTrangNext.classList.remove("active");
+    phanTrangNext.classList.remove("disabled");
+    phanTrangPrev.classList.add("tocbien");
+    phanTrangPrev.classList.remove("hiennguyenhinh");
+    phanTrangNext.classList.add("hiennguyenhinh");
+    phanTrangNext.classList.remove("tocbien");
 }
