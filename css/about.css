@@ -232,6 +232,21 @@ header #moon i {
   background-position: center;
 }
 
+.banner .banner_title{
+  position: relative;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 200px;
+}
+
+.banner .banner_title a{
+  color: #ff6600;
+  font-weight: 600;
+}
+
 /* story */
 
 .story .container .story_title span{
