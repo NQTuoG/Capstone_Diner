@@ -187,8 +187,8 @@
     <section class="booktable">
       <div class="booktable_content text-center px-lg-0">
         <div class="row">
-          <div class="left col-lg-6 px-lg-0 pt-lg-0 pt-5">
-            <div class="left_bg">
+          <div class="left col-sm-12 col-lg-6 px-lg-0 pt-lg-0 pt-5">
+            <div class="left_bg col-sm-12">
               <!-- <img src="../img/banner3.jpg" alt="" /> -->
             </div>
           </div>
@@ -203,7 +203,7 @@
                   quam tesque et libero ut justo ultrices in.
                 </p>
 
-                <div class="bg_bookitem mt-5">
+                <div class="bg_bookitem p-md-5 p-3">
                   <div class="bookitem">
                     <div class="icon mb-4">
                       <span class="fa-solid fa-thumbs-up"></span>
@@ -514,29 +514,41 @@
     <section class="video">
       <div class="container py-lg-5 px-lg-0">
         <div class="video_bg">
-          <!-- <iframe
-            src="https://player.vimeo.com/video/305185528"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen=""
-          ></iframe> -->
+          <!-- Button trigger modal -->
+          <div class="bg_btn text-center">
+            <div
+              type="button"
+              class="btn_playvideo"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <span class="fa-solid fa-play"></span>
+            </div>
+          </div>
 
-          <!-- overlay  -->
-          <div class="overlay">
-            <!-- icon  -->
-            <div class="overlay_icon">
-              <!-- video play icon -->
-              <a href="./img/banner2.jpg">
-                <i class="fa-solid fa-play"></i>
-                <iframe
-                  src="https://player.vimeo.com/video/305185528"
-                  frameborder="0"
-                  allow="autoplay; fullscreen"
-                  allowfullscreen=""
-                  data-fancybox="gallery"
-                  data-caption="Caption #1"
-                ></iframe>
-              </a>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <iframe
+                    src="https://player.vimeo.com/video/305185528"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen=""
+                    class="fs-5"
+                    width="100%"
+                    height="400"
+                  ></iframe>
+                  <!-- id="exampleModalLabel" -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -657,7 +669,7 @@
               </div>
               <i class="fa fa-quote-left"></i>
               <blockquote>
-                <q>OMG! I cannot believe. It's Awesome</q>
+                <h6>OMG! I cannot believe. It's Awesome</h6>
               </blockquote>
               <p>
                 My new site is so much faster and easier to work with than my
@@ -675,11 +687,11 @@
             <!-- == -->
             <div class="item_slider">
               <div class="testimonials_bg_img">
-                <img src="img/team1.jpg" alt="" />
+                <img src="img/team2.jpg" alt="" />
               </div>
               <i class="fa fa-quote-left"></i>
               <blockquote>
-                <q>OMG! I cannot believe. It's Awesome</q>
+                <h6>Simply the best. Better than all the rest.</h6>
               </blockquote>
               <p>
                 My new site is so much faster and easier to work with than my
@@ -689,7 +701,7 @@
               </p>
               <div class="text-center mt-4">
                 <div class="people-info align-self">
-                  <h3>Johnson william</h3>
+                  <h3>Alexander sakura</h3>
                   <p class="indentity text-center">Customer</p>
                 </div>
               </div>
@@ -697,11 +709,11 @@
             <!-- == -->
             <div class="item_slider">
               <div class="testimonials_bg_img">
-                <img src="img/team1.jpg" alt="" />
+                <img src="img/team3.jpg" alt="" />
               </div>
               <i class="fa fa-quote-left"></i>
               <blockquote>
-                <q>OMG! I cannot believe. It's Awesome</q>
+                <h6>OMG! I cannot believe. It's Awesome</h6>
               </blockquote>
               <p>
                 My new site is so much faster and easier to work with than my
@@ -711,7 +723,7 @@
               </p>
               <div class="text-center mt-4">
                 <div class="people-info align-self">
-                  <h3>Johnson william</h3>
+                  <h3>JJohn wilson</h3>
                   <p class="indentity text-center">Customer</p>
                 </div>
               </div>
@@ -719,11 +731,11 @@
             <!-- == -->
             <div class="item_slider">
               <div class="testimonials_bg_img">
-                <img src="img/team1.jpg" alt="" />
+                <img src="img/team2.jpg" alt="" />
               </div>
               <i class="fa fa-quote-left"></i>
               <blockquote>
-                <q>OMG! I cannot believe. It's Awesome</q>
+                <h6>Simply the best. Better than all the rest.</h6>
               </blockquote>
               <p>
                 My new site is so much faster and easier to work with than my
@@ -809,6 +821,18 @@
     <button class="toTop cd-top text-replace js-cd-top">
       <i class="fa-solid fa-angle-up"></i>
     </button>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
     <!-- =====slick carosel====== -->
     <!-- min.js  -->
     <script
