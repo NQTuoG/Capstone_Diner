@@ -353,6 +353,10 @@ header #moon i {
     padding: 3rem 0;
 }
 
+.info .row {
+    align-items: center;
+}
+
 .info .info_item {
     display: flex;
     align-items: center;
@@ -508,13 +512,19 @@ footer .footer_bottom p {
 
 /* Reponsive Header & Footer */
 @media (min-width: 1280px) {
-    .container {
+
+    header .container,
+    footer .container,
+    .contact .container {
         max-width: 1200px;
     }
 }
 
 @media (min-width: 1200px) {
-    .container {
+
+    header .container,
+    footer .container,
+    .contact .container {
         max-width: 1140px;
         margin-right: auto;
         margin-left: auto;
