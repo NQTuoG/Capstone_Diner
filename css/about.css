@@ -288,6 +288,16 @@ header #moon i {
     transition-duration: 0.5s;
 }
 
+/* Added media query for responsiveness */
+@media (max-width: 991px) {
+  .story_right {
+      margin-top: 20px; 
+  }
+
+  .story_footer .col-12 {
+      margin-top: 20px; 
+  }
+}
 
 
 /* skills */
@@ -322,6 +332,14 @@ header #moon i {
     aspect-ratio: auto;
     margin-left: 30px;
     border-radius: 10px;
+}
+
+/* Added media query for responsiveness */
+@media (max-width: 991px) {
+  .skills_images img {
+      margin-left: 0; 
+      margin-bottom: 20px; 
+  }
 }
 
 

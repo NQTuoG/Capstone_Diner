@@ -267,15 +267,28 @@ header #moon i {
   font-family: "Pacifico", sans-serif !important;
 }
 
+
+/* Added media query for responsiveness */
+@media (max-width: 991px) {
+  .offer {
+      padding-right: 15px; 
+  }
+
+  .offer_right p {
+      margin-left: 0; 
+  }
+}
+
 /* Features */
 .features{
-  height: 70vh;
+  height: auto;
 }
 
 .features .container .features_item .features_content{
   border: 1px solid #eeeeee;
   border-radius: 10px;
-  height: 25vh;
+  height: auto;
+  padding: 20px;
 }
 
 .features .container .features_item .features_content .features_header{ 
@@ -307,11 +320,30 @@ header #moon i {
 }
 
 .features .container .features_item .features_content .features_header .info{
-  margin-left: 80px;
+  margin-left: 20px;
 }
 
 .features .container .features_item .features_content .features_header .info a{
   font-weight: 600 !important;
+}
+
+/* Added media query for responsiveness */
+@media (max-width: 991px) {
+  .features_item {
+      margin-left: 0 !important; 
+  }
+
+  .features_content {
+      margin-left: 0 !important; 
+  }
+
+  .features_content .features_header .info {
+      margin-left: 10px; 
+  }
+
+  .features_content .features_header {
+      margin-left: 0 !important; 
+  }
 }
 
 /* deliciousness */
