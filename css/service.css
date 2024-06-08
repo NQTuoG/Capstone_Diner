@@ -21,6 +21,11 @@ body img {
     width: 100%;
 }
 
+body.dark {
+  background-color: #232220;
+  color: white;
+}
+
 section h2{
     font-size: 38px !important;
     font-weight: 600 !important;

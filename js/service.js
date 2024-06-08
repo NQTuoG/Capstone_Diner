@@ -23,11 +23,21 @@ let darktheme = document.querySelector("body");
 let darksearch = document.querySelector(".header_right input");
 console.log(darksearch);
 let darkmail = document.querySelector(".footer_content input");
-let skillsDarkTheme = document.getElementById("skills");
+let featureHeaderDarkTheme1 = document.getElementById("featureHeader1");
+let featureHeaderDarkTheme2 = document.getElementById("featureHeader2");
+let featureHeaderDarkTheme3 = document.getElementById("featureHeader3");
+let featureHeaderDarkTheme4 = document.getElementById("featureHeader4");
+let featureHeaderDarkTheme5 = document.getElementById("featureHeader5");
+let featureHeaderDarkTheme6 = document.getElementById("featureHeader6");
 console.log(darkmail);
 document.getElementById("moon").onclick = function () {
     darktheme.classList.toggle("dark");
     darksearch.classList.toggle("dark-search");
     darkmail.classList.toggle("dark-mail");
-    skillsDarkTheme.classList.toggle("bg-black");
+    featureHeaderDarkTheme1.classList.toggle("text-white");
+    featureHeaderDarkTheme2.classList.toggle("text-white");
+    featureHeaderDarkTheme3.classList.toggle("text-white");
+    featureHeaderDarkTheme4.classList.toggle("text-white");
+    featureHeaderDarkTheme5.classList.toggle("text-white");
+    featureHeaderDarkTheme6.classList.toggle("text-white");
 }
