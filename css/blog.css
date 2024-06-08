@@ -794,10 +794,11 @@ footer .footer_bottom p {
     footer .footer_item:nth-child(2) {
         text-align: center;
     }
+
+    footer .footer_item:first-child {
+        padding-right: 12px !important;
+    }
 }
-
-/* @media screen and (max-width: 576px) {} */
-
 
 
 

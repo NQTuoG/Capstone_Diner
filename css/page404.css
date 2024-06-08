@@ -1,10 +1,12 @@
 .banner_error_404 {
   text-align: center;
 }
+
 .banner_404 {
   text-align: center;
   display: inline-block;
 }
+
 .banner_404 .home_404 {
   font-size: 18px;
   color: #ff6600;
@@ -16,6 +18,7 @@
   color: #fff;
   font-weight: 600;
 }
+
 .banner_error_404 {
   width: 100%;
   background-image: url(../img/banner2.jpg);
@@ -24,6 +27,7 @@
   overflow-y: hidden;
   background-attachment: fixed;
 }
+
 .banner_error_404::after {
   bottom: 0;
   left: 0;
@@ -34,15 +38,18 @@
   background: rgb(255, 116, 0);
   background: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%));
 }
+
 /* =====404= */
 .page_error404 {
   text-align: center;
 }
+
 .error404 {
   max-width: 600px;
   display: inline-block;
   padding: 40px 0px;
 }
+
 .error404 h1 {
   font-size: 130px;
   font-weight: 1000;
@@ -56,6 +63,7 @@
 .error404 p {
   font-size: 18px;
 }
+
 .form_text {
   height: 55px;
   width: 340px;
