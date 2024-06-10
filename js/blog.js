@@ -106,3 +106,8 @@ document.getElementById("one").onclick = function () {
     phanTrangNext.classList.add("hiennguyenhinh");
     phanTrangNext.classList.remove("tocbien");
 }
+
+document.querySelector("footer .btn-orange").onclick = (event) => {
+    event.preventDefault();
+    window.open("mailto:boithanh01694@gmail.com, nguyenquoctuong@gmail.com, dangtrunghieu@gmail.com?subject=I%20Want%20to%20Subscribe%20Now%20please&body=Plese%20tell%20me%20why??");
+}

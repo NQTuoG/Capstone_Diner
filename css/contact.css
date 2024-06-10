@@ -462,7 +462,7 @@ footer .form-row input {
 footer .form-row input:hover,
 footer .form-row input:focus {
     box-shadow: none;
-    border: 1px solid transparent;
+    border: 1px solid #ff6600;
 }
 
 .dark-mail:hover,
@@ -554,6 +554,10 @@ footer .footer_bottom p {
     footer p,
     footer .footer_item:nth-child(2) {
         text-align: center;
+    }
+
+    footer .footer_item:first-child {
+        padding-right: 12px !important;
     }
 }
 

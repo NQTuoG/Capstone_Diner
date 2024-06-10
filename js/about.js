@@ -21,13 +21,16 @@ getElement(".header_navbar").addEventListener("click", () => {
 //DarkTheme
 let darktheme = document.querySelector("body");
 let darksearch = document.querySelector(".header_right input");
-console.log(darksearch);
 let darkmail = document.querySelector(".footer_content input");
 let skillsDarkTheme = document.getElementById("skills");
-console.log(darkmail);
 document.getElementById("moon").onclick = function () {
     darktheme.classList.toggle("dark");
     darksearch.classList.toggle("dark-search");
     darkmail.classList.toggle("dark-mail");
     skillsDarkTheme.classList.toggle("bg-black");
+}
+
+document.querySelector("footer .btn-orange").onclick = (event) => {
+    event.preventDefault();
+    window.open("mailto:boithanh01694@gmail.com, nguyenquoctuong@gmail.com, dangtrunghieu@gmail.com?subject=I%20Want%20to%20Subscribe%20Now%20please&body=Plese%20tell%20me%20why??");
 }

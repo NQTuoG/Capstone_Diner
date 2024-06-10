@@ -36,3 +36,8 @@ document.getElementById("moon").onclick = function () {
     darksocial.classList.toggle("dark-social");
     bando.classList.toggle("my__Map");
 }
+
+document.querySelector("footer .btn-orange").onclick = (event) => {
+    event.preventDefault();
+    window.open("mailto:boithanh01694@gmail.com, nguyenquoctuong@gmail.com, dangtrunghieu@gmail.com?subject=I%20Want%20to%20Subscribe%20Now%20please&body=Plese%20tell%20me%20why??");
+}

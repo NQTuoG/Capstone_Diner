@@ -521,7 +521,7 @@ footer .form-row input {
 footer .form-row input:hover,
 footer .form-row input:focus {
   box-shadow: none;
-  border: 1px solid transparent;
+  border: 1px solid #ff6600;
 }
 
 .dark-mail:hover,
